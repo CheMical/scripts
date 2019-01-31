@@ -10,4 +10,8 @@ else
 fi
 
 drupal-compose/up.sh
+
+# Wait for containers to function
+sleep 5
+
 drupal-compose/install.sh
