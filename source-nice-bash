@@ -1,0 +1,12 @@
+if [ -d bash-niceness ]
+then
+  pushd bash-niceness
+  git pull
+  popd
+else
+  git clone https://github.com/CheMical/bash-niceness.git
+fi
+
+bind -f bash-niceness/.inputrc
+
+. bash-niceness/.bash_aliases
